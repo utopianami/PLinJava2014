@@ -1,7 +1,6 @@
 
 public class Point {
 	
-	
 	private Direction dir;
 	private boolean line = false;
 

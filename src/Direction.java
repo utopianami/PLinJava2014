@@ -13,4 +13,10 @@ public enum Direction {
 	public int getValue() {
 		return value;
 	}
+	
+	public boolean isDown(){
+		if ( this == DOWN)
+			return true;
+		return false;
+	}
 }

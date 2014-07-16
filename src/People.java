@@ -11,19 +11,13 @@ public class People {
 	}
 	
 	public void move(Direction dir){
-		if (isDown(dir)) {
+		if (dir.isDown()) {
 			this.col +=1;
 		}
 		else {
 			this.col +=1;
 			this.row += dir.getValue();
 		}
-	}
-	
-	public boolean isDown(Direction dir){
-		if (dir == Direction.DOWN)
-			return true;
-		return false;
 	}
 
 	public int getCol() {
@@ -39,5 +33,4 @@ public class People {
 			return true;
 		return false;
 	}
-
 }
