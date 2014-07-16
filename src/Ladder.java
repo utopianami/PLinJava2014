@@ -21,11 +21,11 @@ public class Ladder {
 		}
 	}
 	
-	private void drawLine(){
+	private void drawLine() {
 		Random randomGenerator = new Random();
 		int randomRange = axisList.size()-1;
 		
-		for (int i = 0; i < height ; i++){
+		for (int i = 0; i < height ; i++) {
 			int axisNum = randomGenerator.nextInt(randomRange);
 			int nextAxisNum = axisNum + 1;
 			axisList.get(axisNum).drawLine(Direction.RIGHT, i);
@@ -33,7 +33,7 @@ public class Ladder {
 		}
 	}
 	
-	public int move(int row){
+	public int move(int row) {
 		People people = new People(row, height);
 		int curRow = people.getRow();
 		while (!people.arriveDestination()) {

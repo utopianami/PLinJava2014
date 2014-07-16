@@ -5,12 +5,12 @@ public class People {
 	private int col = 0;
 	private int destination;
 	
-	public People(int row, int height){
+	public People(int row, int height) {
 		this.row = row;
 		destination = height;
 	}
 	
-	public void move(Direction dir){
+	public void move(Direction dir) {
 		if (dir.isDown()) {
 			this.col +=1;
 		}

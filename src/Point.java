@@ -8,7 +8,7 @@ public class Point {
 		this.dir = Direction.DOWN;
 	}
 	
-	public void drawLine(Direction dir){
+	public void drawLine(Direction dir) {
 		this.line = true;
 		this.dir = dir;
 	}

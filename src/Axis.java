@@ -27,7 +27,7 @@ public class Axis {
 	public void move(People people) {
 		int index = people.getCol();
 		
-		while (!people.arriveDestination()){
+		while (!people.arriveDestination()) {
 			Point curPoint = pointList.get(index);
 			curPoint.move(people);
 			if ( curPoint.existLine() ) 

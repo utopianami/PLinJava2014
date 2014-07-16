@@ -14,7 +14,7 @@ public enum Direction {
 		return value;
 	}
 	
-	public boolean isDown(){
+	public boolean isDown() {
 		if ( this == DOWN)
 			return true;
 		return false;
