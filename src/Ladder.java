@@ -47,8 +47,9 @@ public class Ladder {
 	public String printLadder() {
 		StringBuilder sb = new StringBuilder();
 		for (Axis axis : axisList) {
-			sb.append("L-");
+			sb.append("S-");
 			sb.append(axis.printAxis());
+			sb.append("-E");
 			sb.append("\n");
 		}
 		return sb.toString();
